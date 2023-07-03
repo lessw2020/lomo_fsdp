@@ -1,0 +1,4 @@
+deepspeed
+transformers
+peft
+wandb

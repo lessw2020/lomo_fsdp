@@ -72,8 +72,8 @@ def train():
         wandb_config.update(asdict(model_args))
         wandb_config.update(asdict(data_args))
         wandb.init(
-            project="collie",
-            entity='collie_exp',
+            #project="collie",
+            #entity='collie_exp',
             name=tag_name if hparam_name == 'output' else '_'.join([tag_name, hparam_name.replace('output_', '')]),
             config=wandb_config
         )
